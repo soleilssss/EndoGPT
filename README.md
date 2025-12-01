@@ -77,7 +77,7 @@ export PYTHONPATH=$PYTHONPATH:/pth/to/xdecoder_data/coco_caption
 To train the model on a distributed system (e.g., 4 GPUs):
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 entry.py train --conf_files configs/xdecoder_focall_my1_giana.yaml
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 entry.py train --conf_files configs/endogpt_focall_giana.yaml
 ```
 > **Note**: When switching between single-GPU and multi-GPU training, you may need to adjust `trainer/utils/mpi_adapter.py`.
 
@@ -85,7 +85,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 entry.py train --conf_f
 To run inference and visualize results:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python infer_giana.py evaluate --conf_files configs/xdecoder_focall_my1_giana.yaml
+CUDA_VISIBLE_DEVICES=0 python infer_giana.py evaluate --conf_files configs/endogpt_focall_giana.yaml
 ```
 > **Note**: You may need to modify the `pretrained_pth` and `output_root` variables in `inference/infer_giana.py` before running.
 

@@ -1,10 +1,3 @@
-# --------------------------------------------------------
-# X-Decoder -- Generalized Decoding for Pixel, Image, and Language
-# Copyright (c) 2022 Microsoft
-# Licensed under The MIT License [see LICENSE for details]
-# Modified by Xueyan Zou (xueyan@cs.wisc.edu)
-# --------------------------------------------------------
-
 import os
 import logging
 from mpi4py import MPI
@@ -66,8 +59,7 @@ class DistributedTrainer:
             add_hook()
 
         # prepare metadata for save folder
-        #conf_file = self.opt['conf_files'][0]
-        conf_file = '/data/wkn/unify/X-Decoder-main/configs/xdecoder/xdecoder_focalt_lang.yaml'
+        conf_file = self.opt['conf_files'][0]
         if 'BASENAME' not in self.opt:
             self.opt['BASENAME'] = os.path.basename(conf_file)
         

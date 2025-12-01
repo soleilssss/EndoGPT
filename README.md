@@ -1,5 +1,9 @@
 ## EndoGPT: A Multi-Modal Multi-Task Foundation Model for Generalist Endoscopic Analysis 
 
+
+https://github.com/user-attachments/assets/f63e1f9c-cf76-4875-8409-b002136e1c65
+
+
 We present EndoGPT, an open-source generalist foundation model trained on 6 million endoscopic images across multiple modalities. EndoGPT employs a unified framework that converts heterogeneous annotations into a common representation, enabling classification, detection, and segmentation within a single architecture. 
 
 
